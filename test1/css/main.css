@@ -2,7 +2,9 @@
 * {
   font-family: Raleway!important;
 }
-
+body {
+  background-color: #e7e7e7;
+}
 /* header */
 .navbar {
   width: 100%;
@@ -65,11 +67,59 @@ margin-right: 5rem;
 }
 
 .header_serch {
-  background-color: #c6a8a8;
+  background-color: white;
   position: absolute;
   top: 87%;
   height: 175px;
-  width: 70%;
-  left: 15%;
+  width: 60%;
+  display: flex;
+  left: 19%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search_item {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  color: grey;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.search_item:first-child {
+  color: black;
+  border-bottom: 1px solid grey;
+}
+
+.style_arrow {
+  background-color: #ff002d;
+  color: white;
+  font-size: 40px;
+  border-radius: 30px;
+  padding: 8px;
+  margin-right: 22px;
 }
 /* /header */
+
+
+/* section Vacations */
+#vacations {
+  margin-top: 10rem;
+}
+
+.h3_vacations {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text-center span {
+  font-size: 10px;
+  vertical-align: 2px;
+}
+
+.card-body {
+  position: absolute;
+}
