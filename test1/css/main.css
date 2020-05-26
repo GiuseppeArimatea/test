@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+.margin_top {
+  margin-top: 6rem;
+}
+
 
 .bg-light {
  background-color: white!important;
@@ -108,7 +112,10 @@ margin-right: 5rem;
 #vacations {
   margin-top: 10rem;
 }
-
+.cont_style {
+  display: flex;
+  justify-content: space-around;
+}
 .h3_vacations {
   text-align: center;
   font-size: 50px;
@@ -122,4 +129,29 @@ margin-right: 5rem;
 
 .card-body {
   position: absolute;
+  bottom: 8%;
+  left: 11%;
+  background-color: white;
+  width: 80%;
+  height: 6rem;
+}
+
+.card-text {
+  border: 1px solid lightgrey;
+  padding: 16px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Holiday */
+.img_bottom{
+display: flex;
+flex-direction: row;
+position: absolute;
+width: 160px;
+top: 67%;
+}
+
+.card-img {
 }
