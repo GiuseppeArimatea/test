@@ -92,6 +92,7 @@ margin-right: 5rem;
   display: flex;
   left: 19%;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -118,6 +119,27 @@ margin-right: 5rem;
   padding: 8px;
   margin-right: 22px;
 }
+
+
+@media screen and (max-width:1346px) {
+  .margin_right {
+    margin-right: 2rem;
+  }
+  .margin_left {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .h3_header_bottom {
+    font-size: 30px;
+  }
+  .header_serch {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
 /* /header */
 
 
@@ -140,7 +162,9 @@ margin-right: 5rem;
   font-size: 10px;
   vertical-align: 2px;
 }
-
+.flex {
+  display: flex;
+}
 .card-body {
   position: absolute;
   bottom: 8%;
@@ -156,6 +180,20 @@ margin-right: 5rem;
   font-size: 15px;
   text-align: center;
   font-weight: bold;
+}
+@media screen and (max-width: 991px) {
+  .card {
+    margin-bottom: 15px;
+  }
+  .cont_style {
+    display: flex;
+  }
+  .flex {
+    display: contents!important;
+  }
+  .img_bm {
+    display: none!important;
+  }
 }
 
 /* Holiday */
@@ -179,7 +217,11 @@ h4 {
   align-items: end;
   font-size: 20px;
 }
-
+.img_bm {
+  flex-direction:row;
+  position: absolute;
+  bottom: 0;
+}
 .icons_holiday svg {
   width: 30px;
 }
@@ -277,7 +319,7 @@ footer {
   padding-top: 60px;
 }
 .style_footer {
-  height: 300px;
+  height: 270px;
   color: white;
 }
 
