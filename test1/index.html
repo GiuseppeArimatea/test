@@ -15,7 +15,7 @@
  <header>
    <div class="container-fluid">
      <div class="row">
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg navbar-light">
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav font-weight-bold">
              <li class="nav-item">
@@ -244,7 +244,7 @@
         <span class="mr-2 ml-2">◇</span><span class="mr-2 ml-2">◇</span><strong class="mr-2 ml-2">◆</strong><span class="mr-2 ml-2">◇</span><span class="mr-2 ml-2">◇</span>
       </div>
     </div>
-    <div class="container-fluid" style="width:74%;">
+    <div class="container-fluid mb-5" style="width:74%;">
       <div class="row text-center">
           <div class="col-md-4">
             <i class="fas fa-file-signature icons_services"></i>
@@ -267,13 +267,80 @@
     <!-- /services -->
 
     <section id="contact">
-
+          <div class="back_contact">
+            <div class="form">
+              <h4>Send us a Messagge</h4>
+                <form name="modulo">
+                  <div class="d-flex"style="flex-direction:column;width:70%;margin:0 auto;">
+                    <input type="text" name="name" placeholder="Your Name"></input>
+                    <input type="text" name="email" placeholder="Email Recipient">
+                    <input  name="messaggio" rows="10" cols="30" placeholder="Message"></input>
+                    <input class="invia button_contact" type="button" value="SEND" onClick="Email()"></input>
+                  </div>
+                </form>
+            </div>
+          </div>
     </section>
  </main>
 
- <footer>
+ <footer id="footer">
+  <div class="container-fluid style_footer" style="width:74%">
+    <div class="row">
+      <div class="col-2">
+          <h5>Information</h5>
+          <span>About us</span>
+          <span>Online enquiry</span>
+          <span>Call us</span>
+          <span>General enquires</span>
+          <span>Booking conditions</span>
+          <span>Privacy policy</span>
+          <span>Refunde policy</span>
+      </div>
+      <div class="col-2">
+        <h5>Experiences</h5>
+        <span>About us</span>
+        <span>Online enquiry</span>
+        <span>Call us</span>
+        <span>General enquires</span>
+        <span>Booking conditions</span>
+        <span>Privacy policy</span>
+        <span>Refunde policy</span>
+        <span>Privacy policy</span>
+        <span>Refunde policy</span>
+      </div>
+      <div class="col-2">
+        <h5>Themes</h5>
+        <span>About us</span>
+        <span>Online enquiry</span>
+        <span>Call us</span>
+      </div>
+      <div class="col-2">
+        <h5>Popular Destinations</h5>
+        <span>About us</span>
+        <span>Online enquiry</span>
+        <span>Call us</span>
+        <span>General enquires</span>
+        <span>Booking conditions</span>
+        <span>Privacy policy</span>
+        <span>Refunde policy</span>
+      </div>
+      <div class="offset-2">
+      </div>
+      <div class="col-2">
+        <span class="text-right">Phone: 333333</span>
+        <span class="text-right"> ciao@gmail.com</span>
+        <span class="text-right">Address</span>
+        <span class="text-right">General enquires</span>
+        <span class="text-right">Booking conditions</span>
+        <span class="text-right">Privacy policy</span>
+        <span class="text-right">Refunde policy</span>
+      </div>
 
+    </div>
+  </div>
  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>

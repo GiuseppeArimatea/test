@@ -8,8 +8,18 @@ body {
 /* header */
 .navbar {
   width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  transition: background-color 0.4s ease-out;
 }
-
+.sfondo1 {
+  background-color: white;
+}
+.sfondo2 {
+  background-color: #2bc44f;
+  background-image: linear-gradient(45deg, #29773b, #00ff3aad);
+}
 .margin_top {
   margin-top: 6rem;
 }
@@ -37,8 +47,11 @@ margin-right: 5rem;
   cursor: pointer;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.color_text{
   color: rgb(147, 147, 147);
+}
+.color_text2{
+  color: white!important;
 }
 
 .nav-item span {
@@ -209,4 +222,66 @@ h4 {
 
 .text_services {
   color: #2a2a2a;
+}
+
+/* concact */
+
+.back_contact {
+  background-image: url(../img/5.jpg);
+  background-size: cover;
+  height: 80vh;
+  transform: scaleX(-1);
+  background-position: center;
+}
+
+.form {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: scaleX(-1);
+}
+
+.form h4 {
+  padding-left: 70px;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.d-flex input {
+  margin-bottom: 40px;
+  border: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.button_contact {
+  background-color: #ff002d;
+  border-radius: 26px;
+  color: white;
+  text-align: center;
+  height: 48px;
+  width: 130px;
+  padding: 8px;
+  margin-top: 70px;
+}
+/* /contact */
+
+
+/* footer */
+footer {
+  background-color: #0c0c0c;
+  padding-top: 60px;
+}
+.style_footer {
+  height: 300px;
+  color: white;
+}
+
+.style_footer .row .col-2 {
+  display: flex;
+  flex-direction: column;
 }
