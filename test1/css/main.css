@@ -23,7 +23,120 @@ body {
 .margin_top {
   margin-top: 6rem;
 }
+.menu {
+  margin: 0 20px 0 0;
+  padding-left: 3.25em;
+  cursor: pointer;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  text-align: right;
+  display: none;
+}
 
+.menu-close {
+  font-size: 0em;
+  opacity: 0;
+  text-align: center;
+  font-weight: bold;
+
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+}
+
+.menu-close-visible {
+  font-size: 2em;
+  opacity: 1;
+
+  -webkit-transition: 0.2s 0.4s;
+          transition: 0.2s 0.4s;
+}
+
+.menu-global {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+}
+.global1 {
+  background-color: #6f8f0c!important;
+}
+.global2 {
+  background-color: white;
+}
+
+.menu-global:hover {
+  left: 10px;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 18px;
+}
+.menu-bottom {
+  top: 36px;
+}
+
+.menu-text{
+  opacity: 0;
+  font-size: 0em;
+  padding: 10px 0;
+  -webkit-transition: 0.1s;
+          transition: 0.1s;
+}
+
+.expand {
+  box-shadow: rgba(0, 0, 0, 0.1) -2.5px 5px 7.5px, rgba(0, 0, 0, 0.1) 2.5px 5px 7.5px;
+  width: 200px;
+  height: 50px;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.menu-top-expand {
+  top: 50px;
+  background: #277f3b;
+
+  -webkit-transition: all 0.5s 0.2s, left 0.1s;
+          transition: all 0.5s 0.2s, left 0.1s;
+}
+
+.menu-middle-expand {
+  top: 100px;
+  background:  #277f3b;
+
+  -webkit-transition: all 0.5s 0.1s, left 0.1s;
+          transition: all 0.5s 0.1s, left 0.1s;
+}
+
+.menu-bottom-expand {
+  top: 150px;
+  height: 40px;
+  background:  #277f3b;
+
+  -webkit-transition: all 0.5s, left 0.1s;
+          transition: all 0.5s, left 0.1s;
+}
+
+.menu-text-expand{
+  color: white;
+  font-weight: bold;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 1.3em;
+  -webkit-transition: all 0.2s 0.7s, font-size 0.1s;
+          transition: all 0.2s 0.7s, font-size 0.1s;
+}
 
 .bg-light {
  background-color: white!important;
@@ -100,7 +213,7 @@ margin-right: 5rem;
 .search_item {
   display: flex;
   flex-direction: row;
-  width: 200px;
+  width: 235px;
   color: grey;
   justify-content: space-between;
   border-bottom: 1px solid grey;
@@ -121,24 +234,6 @@ margin-right: 5rem;
 }
 
 
-@media screen and (max-width:1346px) {
-  .margin_right {
-    margin-right: 2rem;
-  }
-  .margin_left {
-    margin-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .h3_header_bottom {
-    font-size: 30px;
-  }
-  .header_serch {
-    flex-direction: column;
-    padding-top: 10px;
-  }
-}
 
 /* /header */
 
@@ -181,20 +276,7 @@ margin-right: 5rem;
   text-align: center;
   font-weight: bold;
 }
-@media screen and (max-width: 991px) {
-  .card {
-    margin-bottom: 15px;
-  }
-  .cont_style {
-    display: flex;
-  }
-  .flex {
-    display: contents!important;
-  }
-  .img_bm {
-    display: none!important;
-  }
-}
+
 
 /* Holiday */
 
@@ -326,4 +408,89 @@ footer {
 .style_footer .row .col-2 {
   display: flex;
   flex-direction: column;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:1346px) {
+  .margin_right {
+    margin-right: 2rem;
+  }
+  .margin_left {
+    margin-left: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  footer {
+    font-size: 12px;
+  }
+  footer h5 {
+    font-size: 15px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+  .button_holiday {
+    font-size: 18px;
+  }
+  .holidays_p {
+    font-size: 17px;
+  }
+  .h3_header_bottom {
+    font-size: 30px;
+  }
+  .menu {
+    display: block;
+    list-style: none;
+  }
+  .header_serch {
+    top: 70%;
+    height: 258px;
+    width: 70%;
+    left: 13%;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .card-body {
+    height: 7rem;
+  }
+  .cont_style {
+    display: flex;
+  }
+  .flex {
+    display: contents!important;
+  }
+  .img_resp {
+    width: 100%!important;
+  }
+  .padding_bottom {
+    width: 100%!important;
+    font-size: 24px;
+  }
+  .img_bm {
+    display: none!important;
+  }
+  .padding_bottom {
+    margin-bottom: 20px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer h5 {
+    font-size: 10px;
+  }
+  .style_footer {
+    width: 100%!important;
+    font-size: 9px;
+  }
+  .form {
+    height: 471px;
+    width: 280px;
+  }
+
 }
