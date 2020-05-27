@@ -56,7 +56,7 @@ margin-right: 5rem;
   background-image: url(../img/150575.jpg);
   background-size: cover;
   height: 80vh;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   position: relative;
 }
@@ -155,7 +155,7 @@ h4 {
 }
 .holidays_p {
   text-align: left;
-  padding: 20px;
+  padding-left: 20px;
   font-weight: bold;
   color: #5b5757
 }
@@ -164,6 +164,7 @@ h4 {
   display: flex;
   padding-left: 20px;
   align-items: end;
+  font-size: 20px;
 }
 
 .icons_holiday svg {
@@ -191,4 +192,21 @@ h4 {
   padding: 8px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+/* /holiday */
+
+/* Services */
+.icons_services {
+  background-color: #058934;
+  height: 104px;
+  border-radius: 60px;
+  width: 110px!important;
+  padding: 30px;
+  color: white;
+  background-image: linear-gradient(45deg, #31df57, #1b7a38);
+}
+
+.text_services {
+  color: #2a2a2a;
 }
