@@ -34,7 +34,7 @@
               $('.menu-global').removeClass('global1');
           }
         });
-
+        
 
         var Menu = {
         el: {
